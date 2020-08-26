@@ -209,7 +209,7 @@ export const TimePickerCalendar = memo<Props>(props => {
 
   if (isFullscreen) {
     return (
-      <ClickOutsideWrapper onClick={props.onClose}>
+      <ClickOutsideWrapper onClick={props.onClose} eventType="mousedown">
         <div className={styles.container} onClick={stopPropagation}>
           <Body {...props} />
         </div>
